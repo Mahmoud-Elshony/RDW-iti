@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>day1 task 1</title> 
+    <script src="./icons.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 80px;
+        }
+
+        nav img {
+            border-radius: 50%;
+        }
+
+        ul {
+            padding-top: 50px;
+            list-style-type: none;
+        }
+
+        a {
+            color: #eee;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .parent {
+            display: flex;
+        }
+
+        h3 {
+            color: green;
+        }
+
+        .main-content {
+            padding: 20px;
+            max-width: 100%;
+        }
+
+        .thecardimgcontaner {
+            display: flex;
+            gap: 10px;
+        }
+
+        .imgcar {
+            padding: 20px;
+            background-color: #eee;
+            width: 25%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+        /* scren 2 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: row;
+                background-color: red;
+            }
+
+            .parent {
+                flex-direction: column;
+            }
+
+            nav,
+            nav ul {
+                display: flex;
+            }
+
+            nav ul,
+            li {
+                padding-left: 20%;
+            }
+
+            nav li a {
+                display: none;
+            }
+        }
+
+        /* screen 3 */
+        @media (max-width: 400px) {
+            .container {
+                background-color: white;
+            }
+
+            .parent {
+                display: flex;
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .thecardimgcontaner {
+                flex-direction: column;
+            }
+
+            .imgcar {
+                width: 80%;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <nav>
+            <img src="./Screenshot_183.png" alt="">
+            <ul>
+                <li><i class="fa-solid fa-house"></i> <a href="#">About</a></li>
+                <li><i class="fa-solid fa-list-check"></i><a href="#">Curriculum</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="#">Resources</a></li>
+                <li><i class="fa-solid fa-shop"></i><a href="#">Shop</a></li>
+                <li><i class="fa-solid fa-bomb"></i><a href="#">Workshop</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="#">Connect</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="main-content">
+                <img src="./Screenshot_184.png" alt="women">
+            </div>
+            <div class="thecardimgcontaner">
+                <div class="imgcar">
+                    <img src="./Screenshot_184.png" alt="">
+                    <h3>card1</h3>
+                    <p>
+                        this is cards contant
+                    </p>
+                </div>
+                <div class="imgcar">
+                    <img src="./Screenshot_184.png" alt="">
+                    <h3>card 2</h3>
+                    <p> this is cards contant</p>
+                </div>
+                <div class="imgcar">
+                    <img src="./Screenshot_184.png" alt="">
+                    <h3>card3</h3>
+                    <p> this is cards contant</p>
+                </div>
+                <div class="imgcar">
+                    <img src="./Screenshot_184.png" alt="">
+                    <h3>card4</h3>
+                    <p> this is cards contant</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>my footer</p>
+    </footer>
+
+</body>
+
+</html>

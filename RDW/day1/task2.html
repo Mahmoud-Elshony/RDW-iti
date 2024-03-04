@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day1 task2</title>
+    <link rel="stylesheet" href="gird-col.css">
+    <script src="./icons.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            margin: auto;
+            /* text-align: center; */
+        }
+
+        body {
+            background-color: white;
+        }
+
+        main {
+            background-color: #eee;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header * {
+
+            text-align: center;
+            /* justify-self: center; */
+            /* align-items: center; */
+        }
+
+        h3 {
+            text-align: center;
+            background-color: blueviolet;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 10px;
+        }
+
+        .cardfooter span {
+            color: red;
+            position: relative;
+            top: -9px
+        }
+
+        .expre {
+            text-align: center;
+        }
+
+        .expre .spana1 {
+            color: red;
+        }
+        .footContaner{
+            display: flex;
+            padding: 20px;
+        }
+        .footContaner .footcard{
+            padding: 10px;
+        }
+        progress{
+            /* display: inline; */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div><img src="./1.jpg" width="100" style="border-radius: 50%;"></div>
+        <h1>MAHMOUD MOHAMED ELSHONY</h1>
+        <h6>Lorem, ipsum dolor sit amet </h6>
+        <p class="col-9">
+
+            consectetur adipisicing elit. Possimus expedita quia dolor, id quibusdam aspernatur doloremque consequatur
+            amet nulla asperiores perspiciatis nemo nam quas veniam ex culpa qui placeat nostrum!
+        </p>
+
+    </header>
+    <main>
+        <section>
+            <h3 class="col-10"> Education</h3>
+            <div class="cards col-10">
+                <div class="card col-2">
+                    consectetur adipisicing elit.
+                </div>
+                <div class="card col-2">consectetur adipisicing elit.</div>
+                <div class="card col-2">consectetur adipisicing elit.</div>
+                <div class="card col-2">consectetur adipisicing elit.</div>
+            </div>
+            <br>
+            <div class="cardfooter col-9" style="font-size: large;font-weight: 800;display: flex;">1997-2001
+                <span>_____</span>1997-2001 <span>_____</span>1997-2001
+                <span>_____</span>1997-2043
+            </div>
+        </section>
+
+        <section>
+            <h3 class="col-10" style="background-color: blue;"> achievements</h3>
+            <div class="cards col-10">
+                <div class="card col-4">
+                    consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                </div>
+                <div class="card col-4">
+                    consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                </div>
+                <div class="card col-4">
+                    consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                </div>
+            </div>
+
+        </section>
+
+        <section class="expre">
+            <h3 class="col-10" style="background-color: red;"> work experience</h3>
+            <div class="cards col-10">
+                <div class="card col-2">
+                    <span>Consectetur</span>
+                    <br>
+                    <span class="spana1" style="font-size:xx-small;font-weight: 600;">
+                        WORKPLACE
+                    </span>
+                    <br>
+                    <span>1997-2001</span>
+                </div>
+                <div class="card col-2">
+                    <span>Consectetur</span>
+                    <br>
+                    <span class="spana1" style="font-size:xx-small;font-weight: 600;">
+                        WORKPLACE
+                    </span>
+                    <br>
+                    <span>1997-2001</span>
+                </div>
+                <div class="card col-2">
+                    <span>Consectetur</span>
+                    <br>
+                    <span class="spana1" style="font-size:xx-small;font-weight: 600;">
+                        WORKPLACE
+                    </span>
+                    <br>
+                    <span>1997-2001</span>
+                </div>
+                <div class="card col-2"> <span>Consectetur</span>
+                    <br>
+                    <span class="spana1" style="font-size:xx-small;font-weight: 600;">
+                        WORKPLACE
+                    </span>
+                    <br>
+                    <span>1997-2001</span>
+                </div>
+            </div>
+            <br>
+
+        </section>
+    </main>
+
+
+    <footer class="col-12" style="background-color: #ccc; ">
+        <div class="footContaner col-10" >
+
+            <div class="footcard col-3">
+                <h2>CONTACT</h2>
+                <hr width="100%" style="background-color: rgb(176, 229, 42);height: 3px;">
+                <i class="fa-solid fa-house"></i>
+                bla bal bbla<br>
+                <i class="fa-solid fa-bomb"></i>
+                klsjh kjhsk<br>
+                <i class="fa-solid fa-phone"></i>
+                012154665
+               
+                <br>
+                <i class="fa-solid fa-house"></i>
+                bla bal bbla<br>
+                <i class="fa-solid fa-bomb"></i>
+                klsjh kjhsk<br>
+                <i class="fa-solid fa-phone"></i>
+                012154665
+                
+                
+            </div>
+
+            <div class="footcard col-3"> 
+                <h2>PROGRESS</h2>
+                <hr width="100%" style="background-color: rgb(69, 124, 176);height: 3px;">
+                html5<progress s max="10" value="5"></progress>
+                css3<progress  max="10" value="1"></progress>
+                js<progress  max="10" value="10"></progress>
+            </div> 
+            
+            <div class="footcard col-3">
+                <h2>HOBBIES</h2>
+                <hr width="100%" style="background-color: rgb(116, 200, 127);height: 3px;">
+                
+                eat<br>
+                code<br>
+                sleep<br>
+                sleep<br>
+                code<br>
+                code<br>
+                
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+</body>
+
+</html>
